@@ -27,7 +27,7 @@ export function MainNav() {
         href="/projects"
         className={cn(
           'text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block',
-          pathname === '/about' ? 'text-foreground' : 'text-foreground/60'
+          pathname === '/projects' ? 'text-foreground' : 'text-foreground/60'
         )}
       >
         Projects
@@ -45,7 +45,7 @@ export function MainNav() {
         href="/contact"
         className={cn(
           'text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block',
-          pathname === '/about' ? 'text-foreground' : 'text-foreground/60'
+          pathname === '/contact' ? 'text-foreground' : 'text-foreground/60'
         )}
       >
         Contact

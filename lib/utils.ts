@@ -32,6 +32,17 @@ export function sortProjects(projects: Array<Project>) {
   });
 }
 
+export function getAllTags2(posts: Array<Project>) {
+  const tags: Record<string, number> = {};
+  posts.forEach((post) => {
+    post.tags?.forEach((tag) => {
+      tags[tag] = (tags[tag] ?? 0) + 1;
+    });
+  });
+
+  return tags;
+}
+
 export function getAllTags(posts: Array<Post>) {
   const tags: Record<string, number> = {};
   posts.forEach((post) => {

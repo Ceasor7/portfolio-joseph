@@ -8,7 +8,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'My blog',
-  description: 'Welcome to my Tech News and trends',
+  description:
+    'Welcome to my digital alcove where the latest tech news meets personal insight, bridging the gap between technology and our everyday lives.',
 };
 
 const POSTS_PER_PAGE = 5;
@@ -38,7 +39,12 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         <div className="flex-1 space-y-4">
           <h1 className="inline-block font-black text-4xl lg:text-5xl">Blog</h1>
           <p className="text-xl text-muted-foreground">
-            My ramblings on all things web dev.
+            Here, you will find a curated collection of the latest tech news,
+            insightful analyses, and my own musings on the ever-evolving tech
+            landscape. Whether you are a seasoned tech enthusiast or simply
+            curious, this blog is designed to inform, inspire, and ignite
+            conversations. Dive in and explore the intersection of technology
+            and personal perspective.
           </p>
         </div>
       </div>

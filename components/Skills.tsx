@@ -1,60 +1,31 @@
-import { HoverEffect } from './ui/card-hover-effect';
+import SkillsCard from './SkillsCard';
 
-export const projects = [
-  {
-    title: 'Javascript',
-  },
-  {
-    title: 'NextJS',
-  },
-  {
-    title: 'ReactJS',
-  },
-  {
-    title: 'NodeJS',
-  },
-  {
-    title: 'ExpressJS',
-  },
-  {
-    title: 'TailwindCSS',
-  },
-  {
-    title: 'UI/UX Web Design',
-  },
-  {
-    title: 'Generative AI',
-  },
-  {
-    title: 'Sanity',
-  },
-  {
-    title: 'SEO',
-  },
-  {
-    title: 'Firebase',
-  },
-  {
-    title: 'Framer Motion',
-  },
-  {
-    title: 'Strapi',
-  },
-  {
-    title: 'WireFraming',
-  },
-  {
-    title: 'Authenication',
-  },
+type Props = {
+  id: number;
+  name: string;
+};
+
+const skillsData: Props[] = [
+  { id: 1, name: 'UI/UX Designer' },
+  { id: 2, name: 'MongoDB' },
+  { id: 3, name: 'Javsscript' },
+  { id: 4, name: 'TypeScript' },
+  { id: 5, name: 'NextJS' },
+  { id: 6, name: 'ReactJS' },
+  { id: 7, name: 'Tailwindcss' },
+  { id: 8, name: 'CSS' },
+  { id: 9, name: 'Figma' },
+  { id: 10, name: 'Web Design' },
+  { id: 11, name: 'Docker' },
+  { id: 12, name: 'AWS Cloud ' },
 ];
 
 const Skills = () => {
   return (
-    <div>
-      <h1 className="inline-block py-2 font-black text-4xl lg:text-5xl">
-        Skills
-      </h1>
-      <HoverEffect items={projects} />
+    <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      {skillsData.map((skill) => (
+        <SkillsCard key={skill.id} {...skill} />
+      ))}
     </div>
   );
 };
