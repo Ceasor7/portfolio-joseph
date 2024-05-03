@@ -1,4 +1,5 @@
-import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
+import { PhoneCall } from 'lucide-react';
 
 type Props = {};
 
@@ -7,11 +8,11 @@ const ContactMeCard = (props: Props) => {
     <div>
       <Card>
         <CardContent>
-          <p>Card Content</p>
+          <p className="flex flex-row text-center gap-x-7 pt-5 items-center justify-center">
+            <PhoneCall />
+            <span> +254 708 234 571</span>
+          </p>
         </CardContent>
-        <CardFooter>
-          <p>Card Footer</p>
-        </CardFooter>
       </Card>
     </div>
   );
