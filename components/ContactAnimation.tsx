@@ -10,6 +10,7 @@ const ContactAnimation = (props: Props) => {
       src="/animation_llqd7ey4.lottie"
       autoplay
       loop
+      className=" h-16 w-full"
     ></DotLottiePlayer>
   );
 };

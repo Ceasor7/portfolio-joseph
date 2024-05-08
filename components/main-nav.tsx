@@ -24,10 +24,10 @@ export function MainNav() {
         About
       </Link>
       <Link
-        href="/projects"
+        href="/project"
         className={cn(
           'text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block',
-          pathname === '/projects' ? 'text-foreground' : 'text-foreground/60'
+          pathname === '/project' ? 'text-foreground' : 'text-foreground/60'
         )}
       >
         Projects
