@@ -42,7 +42,9 @@ export default async function ProjectPage({ searchParams }: ProjectPageProps) {
           <h1 className="inline-block font-black text-4xl lg:text-5xl">
             Projects
           </h1>
-          <p className="text-xl text-muted-foreground">My Projects and Work</p>
+          <p className="text-xl text-muted-foreground">
+            My Projects and Collaborations
+          </p>
         </div>
       </div>
       <div className="grid grid-cols-12 gap-3 mt-8">
