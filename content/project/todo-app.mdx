@@ -1,48 +1,102 @@
 ---
-image: '/kmf.PNG'
-title: 'React Project'
+image: '/projects/tododashboard.PNG'
+title: 'Nextjs Todo App'
 description: Explore the amusing analogy.
 date: 2024-02-26
-tags: ['Original project', 'updates']
+tags: ['Original project', 'todoapp']
 published: true
 ---
 
-# React Hooks: Fishing for Components
+[`Nextjs todoapp`](https://todo-app-nextjs-psi.vercel.app/) is a todo list web application created by [`CeasorCodes`](https://ceasorcodes.vercel.app/)
 
-In the vast sea of React, where components swim freely and side-effects lurk in the depths, a developer must become a skilled fisherman to catch their desired functionality. This guide will equip you with the React Hooks you need to catch components with precision and grace.
+This Todo web application, crafted using Next.js and Tailwind CSS,
+offers a sleek and efficient way to manage tasks. At its core, it
+features robust Firebase user authentication, leveraging Google
+Auth for creating user profiles and facilitating login processes.
+The app's backbone is a Firestore database, meticulously designed
+to store and organize todo items, ensuring a seamless and
+productive user experience.
 
-## The Essential Fishing Gear
+---
 
-Before we set sail, let's ensure we have all the necessary gear:
+## Todo App Login/Register Page
 
-- **useState:** The worm that tempts your components to the surface.
-- **useEffect:** The lure that attracts side-effects and keeps them at bay.
-- **useContext:** The net that gathers global states together, making it easier to share across your component sea.
+<img
+  src="/projects/todologin.PNG"
+  alt="Todo Application Login page"
+  className=" w-full h-56 rounded-xl"
+/>
+<span className="mix-blend-plus-lighter text-zinc-200/80">
+  Figure 1: Todo Application Login page
+</span>
 
-## Setting Sail: Your First Catch
+---
 
-With our gear ready, it's time to set sail into the React sea. Here's how to make your first catch:
+## Technologies Used
 
-1. **Bait your hook with useState:** Begin by choosing the right worm. `useState` allows you to add state to your functional components, making them more dynamic and responsive.
+<div className="flex flex-row gap-12">
+  <img
+    src="/technologies/nextjs-fill.svg"
+    alt="technologies used"
+    className=" h-16 w-16 rounded-full"
+  />
+  <img
+    src="/technologies/tailwindcss.svg"
+    alt="technologies used"
+    className=" h-16 w-16 rounded-full"
+  />
+  <img
+    src="/technologies/firebase.svg"
+    alt="technologies used"
+    className=" h-16 w-16 rounded-full"
+  />
+</div>
 
-```jsx
-const [fish, setFish] = useState('🐟');
-```
+---
 
-2. **Attract with useEffect:** Now, use `useEffect` as your lure. This Hook lets you perform side effects in your components, such as fetching data or subscribing to services. It's like casting your line into the water and waiting for a bite.
+## Todo App Dashboard Page
 
-```jsx
-useEffect(() => {
-  console.log(`You've caught ${fish}!`);
-}, [fish]);
-```
+<img
+  src="/projects/tododashboard.PNG"
+  alt="Todo Application Dashboard"
+  className=" w-full h-56 rounded-xl"
+/>
+<span className="mix-blend-plus-lighter text-zinc-200/80">
+  Figure 2: Todo Application Dashboard
+</span>
 
-3. **Gather with useContext:** Finally, use `useContext` as your net. This Hook lets you share state across many components without prop drilling. It's like gathering all your catches in one net for a bountiful harvest.
+---
 
-## The Catch of the Day
+## Description
 
-Congratulations! You've made your first catch in the React sea. But remember, the sea is vast, and there are many more components and hooks to explore. Each project is a new fishing trip, with its challenges and rewards.
+The dashboard displays all the todo's the user has entered. The todos are stored in the Firebase Firestore database
+then fetched and rendered in the dashboard. The user has the ability to delete, edit or mark as done a todo.
 
-Remember to release any components back into the sea if you don't need them. Keeping your application's waters clean and sustainable is key to a healthy React ecosystem.
+---
 
-Happy fishing in the React sea!
+## Todo Web App Logout Page
+
+<img
+  src="/projects/tododlogout.PNG"
+  alt="Todo Web Application logout Page "
+  className=" w-full h-56 rounded-xl border border-black dark:border-white"
+/>
+<span className="mix-blend-plus-lighter text-zinc-200/80">
+  Figure 3: Todo Web Application logout Page
+</span>
+
+The user can logout of the current user and will be redirected to the Login/Register page.
+
+---
+
+### Github Repository Link
+
+[`Click Here`](https://github.com/Ceasor7/Todo-app-nextjs)
+
+### Deployment Link
+
+[`Click Here`](https://todo-app-nextjs-psi.vercel.app/)
+
+---
+
+Have a Project in mind or want to Collaborate 😊 : [`Reach Me`](https://ceasorcodes.vercel.app/contact)

@@ -7,8 +7,7 @@ tags: ['Original project', 'blog']
 published: true
 ---
 
-[`CeasorCodes`](https://ceasorcodes.vercel.app/) is a blog | portfolio website created by
-[`CeasorCodes`](https://ceasorcodes.vercel.app/)
+[`CeasorCodes`](https://ceasorcodes.vercel.app/) is a blog | portfolio website created by[`CeasorCodes`](https://ceasorcodes.vercel.app/)
 
 This Next.js project is a modern web application that leverages the power of TailwindCSS and Shadcn for a sleek, responsive design.
 It utilizes MDX to seamlessly integrate JSX within markdown content, allowing for dynamic components like interactive charts and alerts to be embedded directly into the narrative flow.
@@ -59,177 +58,85 @@ For an enhanced developer experience, it features a Rehype plugin with Shiki syn
 
 ---
 
-## Headers
+## Description
 
-```mdx
-# This is a h1 tag
+The blog | portfolio is developed using [`rehype-pretty-code`](https://github.com/atomiks/rehype-pretty-code) is a Rehype plugin powered by the
+[`shiki`](https://github.com/shikijs/shiki) syntax highlighter that provides beautiful code blocks for Markdown or MDX. It works on both the server at build-time (avoiding runtime syntax highlighting) and on the client for dynamic highlighting.
 
-## This is a h2 tag
+---
 
-#### This is a h4 tag
-```
+## Editor-Grade Highlighting
 
-# This is a h1 tag
+<span className="mix-blend-plus-lighter text-zinc-400/80">
+  Enjoy the accuracy and granularity of VS Code's syntax highlighting engine and
+  the popularity of its themes ecosystem — use any VS Code theme you want!
+</span>
 
-## This is a h2 tag
+## Line Numbers and Line Highlighting
 
-#### This is a h4 tag
+Draw attention to a particular line of code.
 
-## Emphasis
+```js {4} showLineNumbers
+import { useFloating } from '@floating-ui/react';
 
-```mdx
-_This text will be italic_
+function MyComponent() {
+  const { refs, floatingStyles } = useFloating();
 
-**This text will be bold**
-
-_You **can** combine them_
-```
-
-_This text will be italic_
-
-**This text will be bold**
-
-_You **can** combine them_
-
-## Lists
-
-### Unordered
-
-```mdx
-- Item 1
-- Item 2
-  - Item 2a
-  - Item 2b
-```
-
-- Item 1
-- Item 2
-  - Item 2a
-  - Item 2b
-
-### Ordered
-
-```mdx
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-```
-
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-
-## Images
-
-```mdx
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
-Format: ![Alt Text](url)
-```
-
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
-
-## Links
-
-```mdx
-http://github.com - automatic!
-[GitHub](http://github.com)
-```
-
-http://github.com - automatic!
-[GitHub](http://github.com)
-
-## Blockquotes
-
-```mdx
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-```
-
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-
-## Inline code
-
-```mdx
-I think you should use an
-`<addr>` element here instead.
-```
-
-I think you should use an
-`<addr>` element here instead.
-
-## Syntax highlighting
-
-Here’s an example of how you can use syntax highlighting with [GitHub Flavored Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/):
-
-````mdx
-```js:fancyAlert.js
-function fancyAlert(arg) {
-  if (arg) {
-    $.facebox({ div: '#foo' })
-  }
-}
-```
-````
-
-And here's how it looks - nicely colored with styled code titles!
-
-```jsx
-function fancyAlert(arg) {
-  if (arg) {
-    $.facebox({ div: '#foo' });
-  }
+  return (
+    <>
+      <div ref={refs.setReference} />
+      <div ref={refs.setFloating} style={floatingStyles} />
+    </>
+  );
 }
 ```
 
-## Footnotes
+---
 
-```mdx
-Here is a simple footnote[^1]. With some additional text after it.
+## Word Highlighting
 
-[^1]: My reference.
+Draw attention to a particular word or series of characters.
+
+```js /floatingStyles/
+import { useFloating } from '@floating-ui/react';
+
+function MyComponent() {
+  const { refs, floatingStyles } = useFloating();
+
+  return (
+    <>
+      <div ref={refs.setReference} />
+      <div ref={refs.setFloating} style={floatingStyles} />
+    </>
+  );
+}
 ```
 
-Here is a simple footnote[^1]. With some additional text after it.
+## ANSI Highlighting
 
-[^1]: My reference.
+```ansi
+[0;36m  vite v5.0.0[0;32m dev server running at:[0m
 
-## Task Lists
+  > Local: [0;36mhttp://localhost:[0;36;1m3000[0;36m/[0m
+  > Network: [0;2muse `--host` to expose[0m
 
-```mdx
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+  [0;36mready in 125ms.[0m
+
+[0;2m8:38:02 PM[0m [0;36;1m[vite][0m [0;32mhmr update [0;2m/src/App.jsx
 ```
 
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+Inline ANSI: `> Local: [0;36mhttp://localhost:[0;36;1m3000[0;36m/[0m{:ansi}`
 
-## Tables
+---
 
-You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:
+### Github Repository Link
 
-```mdx
-| First Header                | Second Header                |
-| --------------------------- | ---------------------------- |
-| Content from cell 1         | Content from cell 2          |
-| Content in the first column | Content in the second column |
-```
+[`Click Here`](https://github.com/Ceasor7/portfolio-joseph)
 
-| First Header                | Second Header                |
-| --------------------------- | ---------------------------- |
-| Content from cell 1         | Content from cell 2          |
-| Content in the first column | Content in the second column |
+### Deployment Link
 
-## Strikethrough
+[`Click Here`](https://ceasorcodes.vercel.app/)
 
-Any word wrapped with two tildes (like `~~this~~`) will appear ~~crossed out~~.
+---
+
+Have a Project in mind or want to Collaborate 😊 : [`Reach Me`](https://ceasorcodes.vercel.app/contact)
