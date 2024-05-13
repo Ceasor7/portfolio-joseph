@@ -4,14 +4,14 @@ import { Icons } from '../icons';
 
 type Props = {};
 
-const Location = (props: Props) => {
+const EmailContact = (props: Props) => {
   return (
     <Card>
       <CardHeader>
         <div className="flex flex-row gap-7 py-6 justify-center items-center text-center">
           <a target="_blank" rel="noreferrer" href={siteConfig.links.twitter}>
             <span className="sr-only">Twitter</span>
-            <Icons.location className="h-6 w-6" />
+            <Icons.email className="h-9 w-9" />
           </a>
           <p>Nairobi, Kenya</p>
         </div>
@@ -20,4 +20,4 @@ const Location = (props: Props) => {
   );
 };
 
-export default Location;
+export default EmailContact;

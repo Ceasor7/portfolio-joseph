@@ -1,7 +1,7 @@
-import Email from '@/components/contact/Email';
+import EmailContact from '@/components/contact/EmailContact';
+import LocationContact from '@/components/contact/LocationContact';
 import LottieAnimation from '@/components/contact/LottieAnimation';
-import Location from '@/components/contact/location';
-import PhoneNumber from '@/components/contact/phoneNumber';
+import PhoneNumberContact from '@/components/contact/PhoneNumberContact';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -20,9 +20,9 @@ const ContactMe = (props: Props) => {
           <LottieAnimation />
         </div>
         <div className="w-1/2 flex flex-col gap-2">
-          <Location />
-          <PhoneNumber />
-          <Email />
+          <LocationContact />
+          <PhoneNumberContact />
+          <EmailContact />
         </div>
       </div>
     </div>
