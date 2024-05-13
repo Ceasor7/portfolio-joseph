@@ -8,9 +8,9 @@ const LocationContact = (props: Props) => {
   return (
     <Card>
       <CardHeader>
-        <div className="flex flex-row gap-7 py-6 justify-center items-center text-center">
+        <div className="flex flex-row gap-7 cursor-pointer py-4 justify-center items-center text-center">
           <a target="_blank" rel="noreferrer" href={siteConfig.links.twitter}>
-            <span className="sr-only">Twitter</span>
+            <span className="sr-only">Location</span>
             <Icons.location className="h-6 w-6" />
           </a>
           <p>Nairobi, Kenya</p>

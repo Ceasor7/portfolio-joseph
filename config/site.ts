@@ -7,6 +7,8 @@ export const siteConfig = {
     twitter: 'https://twitter.com/JoseGee19',
     linkedin: 'https://twitter.com/JoseGee19',
     github: 'https://github.com/Ceasor7',
+    email: 'josephkgateru7@gmail.com',
+    location: 'https://maps.app.goo.gl/tDoYXZa29umnZamj9',
     personalSite: 'https://joseph-gateru-k.vercel.app',
   },
 };
