@@ -1,4 +1,7 @@
-import ContactForm from '@/components/ContactForm';
+import Email from '@/components/contact/Email';
+import LottieAnimation from '@/components/contact/LottieAnimation';
+import Location from '@/components/contact/location';
+import PhoneNumber from '@/components/contact/phoneNumber';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -14,10 +17,12 @@ const ContactMe = (props: Props) => {
       <h1 className=" font-bold text-2xl py-5">Reach out</h1>
       <div className="flex flex-col sm:flex-row sm:justify-between">
         <div className=" w-1/2">
-          <h1>Hello world</h1>
+          <LottieAnimation />
         </div>
-        <div className="w-1/2">
-          <ContactForm />
+        <div className="w-1/2 flex flex-col gap-2">
+          <Location />
+          <PhoneNumber />
+          <Email />
         </div>
       </div>
     </div>

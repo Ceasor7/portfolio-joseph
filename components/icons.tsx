@@ -30,6 +30,57 @@ export const Icons = {
       />
     </svg>
   ),
+  email: (props: IconProps) => (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {' '}
+        <path
+          d="M4 7L10.94 11.3375C11.5885 11.7428 12.4115 11.7428 13.06 11.3375L20 7M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
+          stroke="#000000"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{' '}
+      </g>
+    </svg>
+  ),
+  phonecall: (props: IconProps) => (
+    <svg viewBox="0 0 15 15" fill="currentColor" {...props}>
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {' '}
+        <path
+          d="M14.5 0.5L8.5 6.5M8.5 6.5V3M8.5 6.5H12M2.5 0.5H4.71922C5.17809 0.5 5.57807 0.812297 5.68937 1.25746L6.2754 3.60162C6.40214 4.10855 6.11721 4.6276 5.62149 4.79284L4.51286 5.16238C3.93422 5.35526 3.58976 5.94882 3.70938 6.54691C4.18814 8.94071 6.05929 10.8119 8.45309 11.2906C9.05118 11.4102 9.64474 11.0658 9.83762 10.4871L10.1354 9.59384C10.3278 9.01652 10.987 8.74349 11.5313 9.01564L13.9472 10.2236C14.286 10.393 14.5 10.7393 14.5 11.118V12.5C14.5 13.6046 13.6046 14.5 12.5 14.5H10.5C4.97715 14.5 0.5 10.0228 0.5 4.5V2.5C0.5 1.39543 1.39543 0.5 2.5 0.5Z"
+          stroke="#000000"
+        ></path>{' '}
+      </g>
+    </svg>
+  ),
+  location: (props: IconProps) => (
+    <svg fill="currentColor" viewBox="0 0 32 32" {...props}>
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {' '}
+        <path d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6zM16.035 16.044c-2.206 0-4.046-1.838-4.046-4.044s1.794-4 4-4c2.207 0 4 1.794 4 4 0.001 2.206-1.747 4.044-3.954 4.044z"></path>{' '}
+      </g>
+    </svg>
+  ),
   gitHub: (props: IconProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
