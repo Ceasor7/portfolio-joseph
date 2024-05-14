@@ -24,8 +24,8 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <article className="flex flex-col gap-2 border-border border-b py-3">
-      <div className="flex flex-row gap-x-14">
-        <div className="flex justify-center">
+      <div className="flex flex-col sm:flex-row gap-x-14 gap-y-4">
+        <div className="flex sm:justify-center">
           <Image width={200} height={100} src={image} alt={title} />
         </div>
         <div className=" w-full">

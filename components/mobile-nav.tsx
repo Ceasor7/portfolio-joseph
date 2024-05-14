@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import { Button } from "./ui/button";
-import { Menu } from "lucide-react";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/navigation";
-import { Icons } from "./icons";
-import { siteConfig } from "@/config/site";
+import { siteConfig } from '@/config/site';
+import { Menu } from 'lucide-react';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import { Icons } from './icons';
+import { Button } from './ui/button';
+import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -35,6 +35,12 @@ export function MobileNav() {
           </MobileLink>
           <MobileLink onOpenChange={setOpen} href="/about">
             About
+          </MobileLink>
+          <MobileLink onOpenChange={setOpen} href="/project">
+            Projects
+          </MobileLink>
+          <MobileLink onOpenChange={setOpen} href="/contact">
+            Contact
           </MobileLink>
           <Link target="_blank" rel="noreferrer" href={siteConfig.links.github}>
             GitHub
