@@ -1,7 +1,8 @@
 export const siteConfig = {
-  name: 'Ceasor Codes',
-  url: 'https://joseph-gateru-k.vercel.app',
-  description: 'Nextjs 14 blog using velite, tailwind and shadcn',
+  name: 'Ceasor Codes - Blog for developers',
+  url: 'https://ceasorcodes.vercel.app/',
+  description:
+    'We specialize in developing web applications that are not only functional but also intuitive and user-friendly. Through our developers blog, we share insights, tips, and the latest industry trends, fostering a community of continuous learning and innovation.',
   author: 'Joseph Gateru',
   links: {
     twitter: 'https://twitter.com/JoseGee19',
@@ -9,7 +10,7 @@ export const siteConfig = {
     github: 'https://github.com/Ceasor7',
     email: 'josephkgateru7@gmail.com',
     location: 'https://maps.app.goo.gl/tDoYXZa29umnZamj9',
-    personalSite: 'https://joseph-gateru-k.vercel.app',
+    personalSite: 'https://ceasorcodes.vercel.app/',
   },
 };
 
