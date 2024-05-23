@@ -33,17 +33,21 @@ export default async function AboutPage() {
             {siteConfig.author}
           </h2>
           <p className="text-muted-foreground text-center break-words">
-            Frontend Web Developer
+            UI/UX Web Designer with full-stack development skills
           </p>
         </div>
-        <p className="text-muted-foreground text-lg py-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
+        <p className="text-muted-foreground text-center text-lg py-4">
+          My experience includes a wide range of front-end and back-end
+          technologies, as well as a thorough understanding of the software
+          development process and best practices. This extensive knowledge base
+          enables me to work effectively with cross-functional teams, helping to
+          the development of scalable and intuitive apps that suit a wide range
+          of user needs. Keeping up with the newest industry trends is more than
+          simply a professional obligation for me; it&apos;s a passion. This
+          passion for technology fuels my ongoing learning and mastery of
+          cutting-edge tools such as Next.js, React.js, Node.js, Express.js,
+          Tailwind CSS, Sass, MongoDB, Firebase, CSS, and content management
+          systems like Sanity and Vercel.
         </p>
       </div>
       <hr className="my-8" />

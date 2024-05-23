@@ -69,7 +69,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
               })}
             </ul>
           ) : (
-            <p>Nothing to see here yet</p>
+            <p className="py-5">Articles coming soon</p>
           )}
           <QueryPagination
             totalPages={totalPages}
