@@ -1,0 +1,196 @@
+---
+title: 11 Crazy new JS framework featuresyou don't know about
+description: Take a look at the latest features in 15 different JavaScript frameworks and the problems they solve for web developers. Take an first look at the React compiler, Angular signals, Svelte runes, and more..
+date: 2024-05-29
+tags: ['Javascript', 'Frameworks', 'Features']
+published: true
+---
+
+last week vercel unveiled NextJS15 and it's got some awesome new features like partial pre-rendering. however this is just the tip of the
+iceberg for gamechanging new JavaScript framework updates in the last few months the good news is that web developers
+have all sorts of shiny new tools to play with but the bad news is that any web app you built before contains totally obsolete Legacy
+code and will need to be Rewritten immediately
+
+## 1. Reactjs19 complier
+
+first we need to talk about react 19 and its new compiler feature basically it takes a
+hint from Frameworks like svelt and solid to compile code ahead of time instead of using the virtual Dom which
+allows the framework to eliminate hooks like
+
+```js {4} react hooks
+useMemo();
+useCallback();
+memo();
+```
+
+because now it already knows what needs to be rendered and you don't need to jump through these hoops to do it in your
+code that's a huge win for react and brings us to the updates in nextjs 15.
+[`React19 complier Overview`](https://react.dev/learn/react-compiler)
+
+## 2. NextJS15 - partial prerendering
+
+Next15 already has support for the react 19 compiler but I think the most
+interesting new feature is something called partial pre-rendering normally when you render a web page in next it's either static when the data doesn't
+change very often or it's Dynamic when the data is uncashed and it's constantly changing but sometimes you might have a page that requires both like maybe you
+have a blog post that could be statically rendered but then it has a bunch of comments below it that should be dynamically rendered well now you can
+put static content and dynamic content on the same page but handle everything from a single HTTP request.
+
+```js {4} showLineNumbers
+export const experimental_ppr = true
+
+export default function Page() {
+  return (
+    <>
+     <StaticComponent />
+            <Suspense fallback={...}>
+                <DynamicComponent />
+            </Suspense>
+    </>
+  );
+}
+```
+
+[`Nextjs15 Partial rerendering guide`](https://nextjs.org/blog/next-15-rc#incremental-adoption-of-partial-prerendering-experimental)
+
+## 3. Remix - Merging Remix and React Router
+
+{' '}
+
+<img
+  src="/blog/remix.JPG"
+  alt="technologies used"
+  className=" w-auto h-auto rounded-xl"
+/>
+[`Remix React Router Guide`](https://remix.run/docs/en/main/discussion/react-router)
+(remix or react router) announced that these two tools are now becoming one and the
+same it's called remix for a reason.
+
+<img
+  src="/blog/remix1.JPG"
+  alt="technologies used"
+  className=" w-auto h-auto rounded-xl"
+/>
+In the future you'll get to remix your remix code back into react router code but
+if that exceeds your tolerance for Ridiculousness another routing option can be found
+in the tanstack ⬇️
+
+## 4. TanStack Start - Another Routing Option
+
+it provides a variety of tools that work on multiple Frameworks including react
+[`Tanstack router guide`](https://tanstack.com/router/latest)
+
+<img
+  src="/blog/tanstack1.JPG"
+  alt="tanstack"
+  className=" w-auto h-auto rounded-xl"
+/>
+but what's interesting is that it's cooking up a new project called tanstack-start⬇️
+<img
+  src="/blog/tanstack2.JPG"
+  alt="tanstack"
+  className=" w-auto h-auto rounded-xl"
+/>
+that provides features like server side rendering⬇️
+<img
+  src="/blog/tanstack3.JPG"
+  alt="tanstack"
+  className=" w-auto h-auto rounded-xl"
+/>
+thus making next JS and remix completely obsolete now speaking of react another hugely
+awesome new feature is million lint⬇️
+
+## 5. Million lint
+
+this comes from the same guy who figured out how to make react a million times faster and basically it's
+an editor plugin that can analyze your code to find performance issues it's really a no-brainer for any react project
+[`Million lint Docs`](https://old.million.dev/docs/introduction)
+
+<img
+  src="/blog/million-lint.JPG"
+  alt="million lint"
+  className=" w-auto h-auto rounded-xl"
+/>
+
+## 6. Solid Start
+
+solid JS which just released solid start version 1.0
+
+<img src="/blog/solid.JPG" alt="solid" className=" w-auto h-auto rounded-xl" />
+it's a meta framework like nextjs 4 Solid but everything is served minimal⬇️
+<img src="/blog/solid1.JPG" alt="solid" className=" w-auto h-auto rounded-xl" />
+and all a cart like you can even take the default file system routing and customize
+it to work the way you want it to. [`solid Start guide`](https://docs.solidjs.com/solid-start)
+
+## 7. Svelt Runes
+
+Svelt has even bigger changes in store a few weeks ago they dropped the svelt version 5 release candidate with a
+radical new RuneScape like experience instead of using plain JavaScript to identify reactive data⬇️
+
+```js {4}
+let x = 0;
+```
+
+you now use runes⬇️
+
+```js {4}
+let x = $state(0);
+```
+
+which are like compiler macros that tell svelt how to identify reactive data under the hood these are backed by
+signals just like solid JS.
+[`Svelt Runes Guide`](https://svelte.dev/blog/runes)
+
+<img src="/blog/svelt.JPG" alt="svelt" className=" w-auto h-auto rounded-xl" />
+
+## 8. Angular 18 - signals
+
+Another big framework which has signals is angular 18 which was released a few days ago and now officially supports zoneless change detection
+
+<img
+  src="/blog/angular.JPG"
+  alt="Angular"
+  className=" w-auto h-auto rounded-xl"
+/>
+you take advantage of it by writing signals⬇️
+<img
+  src="/blog/angular1.JPG"
+  alt="Angular"
+  className=" w-auto h-auto rounded-xl"
+/>
+which make your code easier to read and debug while also reducing the bundle size
+thus making the greatest JavaScript framework of all time even better. [`Angular
+v18 Signals Guide`](https://angular.dev/guide/signals)
+<img
+  src="/blog/angular2.JPG"
+  alt="Angular"
+  className=" w-auto h-auto rounded-xl"
+/>
+
+## 9. VueJs - Vapour Mode
+
+vue.js is also cooking up some new vaporware called Vue Vapor mode
+
+<img src="/blog/vue.JPG" alt="Vue" className=" w-auto h-auto rounded-xl" />
+it's a new compilation strategy that vaporizes the virtual Dom and instead surgically
+updates the regular Dom to squeeze out every last bit of performance from an already
+very fast framework [`VueJs Vapour Mode Blog`](https://www.vuemastery.com/blog/the-future-of-vue-vapor-mode/)
+<img src="/blog/vue1.JPG" alt="Vue" className=" w-auto h-auto rounded-xl" />
+
+## 10. Qwick 2.0 - release of qwick 2.0
+
+A highly underrated JavaScript framework however if you're having a hard time keeping track of all these Frameworks an adjacent tool you
+should know about is **mitosis** it comes from the same team that built **qwick** and basically it allows you to write
+components using a subset of jsx then compile them to any framework like react view spelt Etc it's a JavaScript
+framework for Frameworks for Frameworks for Frameworks and can even turn your figma components into framework code
+[`Qwick Javascript Docs`](https://qwik.dev/docs/)
+
+<img src="/blog/qwick.JPG" alt="qwick" className=" w-auto h-auto rounded-xl" />
+
+## 11. The JavaScript Registry
+
+in order to use any JavaScript framework you'll likely need a package manager like npm well there's a new package manager in town called jsr and
+it comes from the team behind Dino it automatically transpiles all your typescript code and generates the API
+documentation.
+[`Javascript Registry Docs`](https://jsr.io/docs/introduction)
+
+<img src="/blog/jsr.JPG" alt="jsr" className=" w-auto h-auto rounded-xl" />

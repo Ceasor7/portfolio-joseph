@@ -1,4 +1,3 @@
-import AdSense from '@/components/Adsense';
 import { Providers } from '@/components/providers';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
@@ -38,9 +37,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-pt-[3.5rem]">
-      <head>
-        <AdSense pId="ca-pub-1411088021888855" />
-      </head>
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
